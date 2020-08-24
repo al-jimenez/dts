@@ -13,8 +13,10 @@ When you execute dts -? you will get the following:
 
 ## Usage Examples
 
-  dts -?  -  to get the help menu
+    dts -?  -  to get the help menu
 
-  Usage: dts <date string> - i.e.: dts "%I:%M %p, %D" returns >> 10:15 AM, 07/17/20
-         Script usage: <variable name>=$(echo "$(dts fs)")
-         Script usage: echo "$(dts dd/mm/yy)"
+    dts <date string> - i.e.: dts "%I:%M %p, %D" returns >> 10:15 AM, 07/17/20
+
+    Script usage: <variable name>=$(echo "$(dts fs)")
+
+    Script usage: echo "$(dts dd/mm/yy)"
