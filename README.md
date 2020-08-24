@@ -9,7 +9,7 @@ Used / created for macOS bash but can be modified for other OS.
 
 ## Help menu
 When you execute dts -? you will get the following:
-![Help menu]()
+![Help menu](https://github.com/al-jimenez/dts/blob/master/dts.png)
 
 ## Usage Examples
 
