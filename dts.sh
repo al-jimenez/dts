@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-# dts () - return different date/time stamp formats                             # ❤️
-# 📌 Usage: dts | dts <command> | dts ?
+#  📌 dts () - return different date/time stamp formats                             
+# Usage: dts | dts <command> | dts ?
 # ------------------------------------------------------------------------------
 dts() {
-  # Ref date formats:  https://www.tutorialkart.com/bash-shell-scripting/bash-date-format-options-examples/
   [[ -z ${1}                 ]] && { echo "$(LC_ALL=C date +"%-I:%M %p %A,$A %B %d %Y")"; return; }   # "04:01 PM Monday, May 11 2020"
   [[ "${1}" == "dts"         ]] && { echo "$(LC_ALL=C date +%Y-%m-%d" "%H:%M)"; return; }             # "2020-05-06 14:35"
   [[ "${1}" == "today"       ]] && { echo "$(LC_ALL=C date +"%A,$A %B %-d %Y %-I:%M %p")"; return; }  # "April 09 2020 05:29 PM"   +%A
@@ -58,10 +57,8 @@ dts() {
     EXPLICIT DATE FORMAT USAGE HELP wihtout using ${FUNCNAME[0]}():
         echo \"\$(LC_ALL=C date +\"%A, %B %d %Y\")\" >> Tuesday, May 12 2020
   "
-  #test_var=$(dts fs)
-  # debug "test_var" "${test_var}"
   return;
   }
-  [[ "${1}" != "" ]] && { echo "$(LC_ALL=C date +"${1}")"; return; }            # change to local dev folder specified
+  [[ "${1}" != "" ]] && { echo "$(LC_ALL=C date +"${1}")"; return; }
 }
-export -f dts;                                                                  # ...so that you can use this function in scripts
+export -f dts;
