@@ -56,7 +56,7 @@ dts() {
                          echo \"\$(dts dd/mm/yy)\"
 
     EXPLICIT DATE FORMAT USAGE HELP wihtout using ${FUNCNAME[0]}():
-        echo \"\$(LC_ALL=C date +"%A, %B %d %Y")\" >> Tuesday, May 12 2020
+        echo \"\$(LC_ALL=C date +\"%A, %B %d %Y\")\" >> Tuesday, May 12 2020
   "
   #test_var=$(dts fs)
   # debug "test_var" "${test_var}"
